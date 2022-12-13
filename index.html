@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./basic.css">
+</head>
+<body>
+    <form action="/action.php">
+    <table class="back" >
+        <th colspan="2" class="back"> <h1>Survey Form</h1></th>
+        <tr>
+        <td aria-colspan="2"  >Lets us know how we can freeCodeCamp</td>
+        </tr>
+        <tr aria-rowspan="3">
+            <td colspan="2" class="c"> 
+                <ul>
+                <br>
+                <li>Name  <input type="text" placeholder="Enter your name "></li>
+                <br>
+                <li>Email  <input type="text" placeholder="Enter your email"></li>
+                <br>
+                <li> Age  <input type="date" placeholder="Enter your age"></li>
+            
+            </ul>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                Which option describe your current role ?
+            </td>
+            <td>
+                <select name="role" id="role">
+                    <option value="none">None</option>
+                    <option value="student">student</option>
+                    <option value="employee">employee</option>
+                    <option value="unemployed">unemployed</option>
+                </select>
+            </td>
+        </tr>
+        <tr aria-rowspan="3">
+            <td>
+                How likely is that you would recommend <br> freeCodeCamp to a friend ? 
+            </td>
+            <td>
+                <label for="id1">
+                    <input type="radio" value="definitely" name="like" id="id1">definitely
+                    </label>
+                    <br>
+                    <label for="id2">
+                        <input type="radio" value="Maybe" name="like" id="id2">Maybe
+                    </label>
+                    <br>
+                    <label for="id3">
+                            <input type="radio" value="Not sure" name="like" id="id3">Not sure
+                    </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                What do you like the most in freeCodeCamp 
+            </td>
+            <td>
+                <select name="like" id="like">
+                    <option value="none">None</option>
+                    <option value="projects">Projects</option>
+                    <option value="Way of teaching">Way of teaching</option>
+                    <option value="content">Content</option>
+                    <option value="Data Visulisation">Data Visulisation</option>
+                </select>
+            </td>
+        </tr>
+        <tr aria-rowspan="3">
+            <td>
+                Things that should be improved in future
+                <br>(Check all that apply)
+            </td>
+            <td>
+                <label for="id4">
+                    <input type="checkbox" value="front-end projects" name="front-end projects" id="id4">Front-end Projects
+                    </label>
+                    <br>
+                    <label for="id5">
+                        <input type="checkbox" value="back-end projects" name="back-end projects" id="id5">Back-end projects
+                    </label>
+                    <br>
+                    <label for="id6">
+                            <input type="checkbox" value="data Visulisation" name="data Visulisation" id="id6">Data Visulisation
+                    </label>   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea name="feedback" placeholder="Please enter your valuable feedback " hight="100"></textarea>
+            </td>
+            <td >
+                <input type="submit" value="submit">
+
+            </td>
+            
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
